@@ -1,0 +1,40 @@
+{
+  "seller": [
+    {
+      "name": "anil sidhu",
+      "email": "anil@test.com",
+      "password": "abc@123",
+      "id": 1
+    },
+    {
+      "name": "rohi sidhu",
+      "email": "rohit@test.com",
+      "password": "abc@123",
+      "id": 2
+    },
+    {
+      "name": "bharti karpe",
+      "email": "bharti@test.com",
+      "password": "abc@123",
+      "id": 3
+    },
+    {
+      "username": "bhartikarpe04",
+      "password": "abc@123",
+      "email": "bhartikarpe04@gmail.com",
+      "id": 4
+    },
+    {
+      "username": "pawankarpe",
+      "password": "abc@123",
+      "email": "rohan@test.com",
+      "id": 5
+    },
+    {
+      "username": "bhartikarpe04@gmail.com",
+      "password": "abc@123",
+      "email": "rohan@test.com",
+      "id": 6
+    }
+  ]
+}

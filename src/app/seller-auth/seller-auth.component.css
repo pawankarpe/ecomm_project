@@ -46,4 +46,12 @@
   button:hover {
     background-color: #45a049;
   }
+
+  .Linksclass{
+    color: blue;
+    cursor: pointer;
+  }
+  a:hover {
+    background-color: wheat;
+  }
   

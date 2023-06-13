@@ -13,28 +13,40 @@
       "id": 2
     },
     {
-      "name": "bharti karpe",
+      "username": "pawankarpe",
+      "password": "Pass@123",
       "email": "bharti@test.com",
-      "password": "abc@123",
       "id": 3
     },
     {
-      "username": "bhartikarpe04",
-      "password": "abc@123",
-      "email": "bhartikarpe04@gmail.com",
+      "username": "bharti",
+      "password": "test@123",
+      "email": "test@gmail.com",
       "id": 4
     },
     {
-      "username": "pawankarpe",
-      "password": "abc@123",
-      "email": "rohan@test.com",
+      "username": "bharti",
+      "password": "test",
+      "email": "bharti@test.com",
       "id": 5
     },
     {
-      "username": "bhartikarpe04@gmail.com",
-      "password": "abc@123",
-      "email": "rohan@test.com",
+      "username": "bharti",
+      "password": "test",
+      "email": "test",
       "id": 6
+    },
+    {
+      "username": "bhartikarpe04",
+      "password": "test",
+      "email": "test@gmail.com",
+      "id": 7
+    },
+    {
+      "username": "bharti",
+      "password": "434",
+      "email": "test",
+      "id": 8
     }
   ]
 }

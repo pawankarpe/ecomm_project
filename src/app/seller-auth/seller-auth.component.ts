@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { SellerService } from '../services/seller.service';
-import { Router} from '@angular/router';
+import { Router } from '@angular/router';
 import { SignUp } from '../datatype';
 
 @Component({
@@ -8,23 +8,42 @@ import { SignUp } from '../datatype';
   templateUrl: './seller-auth.component.html',
   styleUrls: ['./seller-auth.component.css']
 })
-export class SellerAuthComponent implements OnInit{
-  constructor(private seller:SellerService, private router:Router){
+export class SellerAuthComponent implements OnInit {
+  constructor(private seller: SellerService, private router: Router) {
 
   }
+
+  showLogin = false;
+  authError:string = '';
+
   ngOnInit(): void {
-    throw new Error('Method not implemented.');
-    }
-    signup(data:SignUp):void{
-      console.warn(data);
-      this.seller.userSignUp(data).subscribe((result)=>{
-        console.warn(result)
-        if(result){
-          this.router.navigate(['seller-home'])
-        }
-
-      });
-    }
+    this.seller.reloadSeller()
   }
+
+  signup(data: SignUp): void {
+    console.warn(data);
+    this.seller.userSignUp(data)
+  };
+
+  login(data: SignUp): void {
+    this.authError = "";
+    console.warn(data);
+    this.seller.userLogin(data);
+    this.seller.isLoginError.subscribe((isError)=>{
+      if (isError) {
+        this.authError="User Email or Password Not Correct"
+      }
+    })
+  };
+
+  openLogin() {
+    this.showLogin = true;
+  }
+
+  openSignup() {
+    this.showLogin = false;
+  }
+}
+
 
 

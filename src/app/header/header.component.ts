@@ -7,7 +7,8 @@ import { __values } from 'tslib';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-menuType: String = 'default';
+menuType: string = 'default';
+sellerName: string ='';
   constructor(private route : Router){}
 
   ngOnInit(): void {
@@ -18,6 +19,11 @@ menuType: String = 'default';
           if(localStorage.getItem('seller') && val.url.includes('seller')){
             console.warn("in seller area")
             this.menuType = "seller";
+            if(localStorage.getItem('seller')){
+              let sellerStore = localStorage.getItem('seller');
+              let sellerData = sellerStore && JSON.parse(sellerStore)[0];
+              this.sellerName = sellerData.username;
+            }
           }else{
             console.warn("outside seller")
             this.menuType = "default";
@@ -26,5 +32,9 @@ menuType: String = 'default';
         }
         
       })
+  }
+  logout(){
+    localStorage.removeItem('seller');
+    this.route.navigate(['/'])
   }
 }

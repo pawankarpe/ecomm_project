@@ -47,6 +47,12 @@
       "password": "434",
       "email": "test",
       "id": 8
+    },
+    {
+      "username": "test",
+      "password": "test",
+      "email": "test",
+      "id": 9
     }
   ]
 }

@@ -7,5 +7,20 @@
 			<h3>{{item.productName}}</h3>
 			<p>{{item.productDescription}}</p>
 		</div>
-	</ng-template>	
+	</ng-template>
 </ngb-carousel>
+<br><br>
+<div>
+	<h1 class="card-headings">Top Trending Products</h1>
+	<div class="card-container">
+		<div class="card col-sm-3" *ngFor="let item of trendyProducts">
+			<img src="{{item.productImage}}" alt="Card 1">
+			<h3>{{item.productName}}</h3>
+			<p>{{item.productDescription}}</p>
+			<div class="product-footer">
+				<a href="">View Details</a>
+				<a href="">Add to Card</a>
+			</div>
+		</div>
+	</div>
+</div>

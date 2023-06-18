@@ -70,3 +70,5 @@ http://localhost:3000/seller?email=bharti@test.com&password=Pass@123
 
 14/6/23
 part 10
+17/6/23
+part 22
